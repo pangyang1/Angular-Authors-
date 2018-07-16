@@ -1,0 +1,7 @@
+<div *ngIf='movie'>
+<form (submit)='updateMovie(movie._id)'>
+    <p>Movie Title:<input type="text" name='name' [(ngModel)]='movie.name'></p>
+    <input type="submit" value="Update" >
+    <button (click)='goHome()'>Cancel</button>
+</form>
+</div>

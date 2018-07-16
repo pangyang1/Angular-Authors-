@@ -1,0 +1,9 @@
+<form (submit)='createMovie()'>
+    <p>Movie title:<input type="text" name='name' [(ngModel)]='movie.name'></p>
+    <input type="submit" value="Update" >
+</form>
+<button (click)='goHome()'>Cancel</button>
+
+<div *ngIf='errors'>
+    <p class='error'>{{ errors }}</p>
+</div>
